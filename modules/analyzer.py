@@ -1,5 +1,10 @@
-import os
+from dotenv import load_dotenv
+load_dotenv() 
+
 import openai
+import os
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # (옵션) .env 파일에서 OPENAI_API_KEY 불러오기
 openai.api_key = os.getenv("OPENAI_API_KEY")
