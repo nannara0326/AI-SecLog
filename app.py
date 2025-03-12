@@ -49,7 +49,7 @@ def main():
     elif input_method == "직접 입력":
         user_input = st.text_area("🔍 보안 로그 입력", height=200)
 
-    # 분석 버튼 (완벽한 중앙 정렬)
+    # 분석 버튼 
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
         if st.button("🚀 분석하기"):
